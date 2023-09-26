@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* COLORS PALETTE */
+:root{
+    --color-dark-main:#141922;
+    --color-dark-sidebar:#000000;
+    --color-dark-c-t-a:#080b12;
+    --color-light:#ffffff;
+    --color-grey-playbar:#282828;
+    --color-grey-text:#6b6b6b;
+    --color-grey-text-2:#808286;
+}
+/* FONT */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+/* utility */
+main{
+    width: 100%;
+    height: calc(100% - 90px);
+    background-color: cadetblue;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+}
+.round{
+    max-width: 160px;
+    max-height: 160px;
+}
+.round img{
+    overflow: hidden;
+    border-radius: 50%;
+}
+.pd-y-10{
+    padding: 10px 0px;
+}
+.pd-y-20{
+    padding: 20px 0px;
+}
+.pd-y-30{
+    padding: 30px 0px;
+}
+.pd-y-30-top{
+    padding: 30px 0px 0px;
+}
+/* flex utility */
+.d-flex{
+    display: flex;
+}
+
+/* PLAYBAR */
+.playbar{
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    left: 0;
+    background-color:var(--color-grey-playbar) ;
+}
+
+/* SIDEBAR */
+#sidebar{
+    width: 200px;
+    height:100%;
+    background-color: black;
+    color: var(--color-grey-text);
+}
+.side-logo{
+    width: 80%;
+    padding: 10px 20px;
+}
+#side-logo{
+    width: 100%;
+}
+
+/* MAIN */
+#main-content{
+    width: calc(100% - 200px);
+    background-color: var(--color-dark-main);
+    overflow-y: auto;
+    padding:90px 10px 0px 10px;
+}
+/*MAIN-NAVBAR */
+.main-navbar{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 0.9em;
+}
+.main-navbar ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+.main-navbar ul li{
+    padding: 0px 10px;
+}
+.main-navbar a{
+    color:var(--color-grey-text-2);
+    text-decoration: none;
+}
+/* MAIN-SECTIONS */
+section h2{
+    color: var(--color-light);
+}
+
+/* ALBUMS+COVERS */
+.cover{
+    width: calc(100%/6);
+    margin: 0px 8px;
+}
+.cover-top img{
+    width: 100%;
+}
+.cover-bottom{
+    padding: 10px 0px;
+}
+.title{
+    color: var(--color-light);
+}
+.subtitle{
+    color: var(--color-grey-text);
+}
+/* TOP BANNER */
+#c-t-a{
+    background-color:rgba(0, 0, 0, 0.400);
+    width: calc(100% - 200px);
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 200px;
+}
