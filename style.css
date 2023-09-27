@@ -66,7 +66,17 @@ main{
     display: flex;
     flex-direction: column;
 }
-
+/* C-T-A */
+.upgrade-btn{
+    text-decoration: none;
+    color: var(--color-light);
+    border: 2px solid var(--color-light);
+    padding: 8px 30px;
+    border-radius: 20px;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
 /* PLAYBAR */
 .playbar{
     width: 100%;
