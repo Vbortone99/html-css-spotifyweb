@@ -87,7 +87,7 @@ main{
 }
 /*MAIN-NAVBAR */
 .main-navbar{
-    width: 80%;
+    max-width: 100%;
     margin: 0 auto;
     font-size: 0.9em;
 }
@@ -133,4 +133,29 @@ section h2{
     position: fixed;
     top: 0;
     left: 200px;
+}
+/* MEDIA QUERY */
+@media screen and (max-width:992px){
+    .album{
+        flex-wrap: wrap;
+    }
+    .cover{
+       width: calc(100%/5);
+    }
+}
+@media screen and (max-width:768px) {
+    .album{
+        flex-wrap: wrap;
+    }
+    .cover{
+       width: calc(100%/3);
+    }
+    .main-navbar ul{
+        flex-wrap: wrap;
+    justify-content: center;
+    }
+    .main-navbar ul li{
+        width: calc(100%/3);
+        padding: 5px 0px;
+    }
 }
