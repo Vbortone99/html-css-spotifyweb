@@ -47,8 +47,14 @@ main{
 .pd-y-30-top{
     padding: 30px 0px 0px;
 }
+.pd-y-bottom{
+    padding-bottom: 5px;
+}
 .list-none{
     list-style-type: none;
+}
+.deco-none{
+    text-decoration: none;
 }
 /* flex utility */
 .d-flex{
@@ -99,6 +105,9 @@ main{
     right: 30px;
     top: 10px;
 }
+.upgrade-btn:hover{
+    scale: 1.1;
+}
 /* PLAYBAR */
 .playbar{
     width: 100%;
@@ -110,21 +119,29 @@ main{
     background-color:var(--color-grey-playbar) ;
 }
 .playbar-left,.playbar-middle,.playbar-right{
-    width: calc(100%/3);
+    max-width: calc(100%/3);
 }
 /* LEFT */
 .playbar-left{
     height: 100%;
 }
 .playbar-left img{
-    width: 20%;
+    width: 80px;
     padding: 15px
 }
 .player-title{
     padding: 0px 20px 0px 0px;
 }
+.player-title a:hover{
+    text-decoration: underline;
+    color: var(--color-light);
+}
 .playbar i{
-    padding: 0px 4px;
+    padding: 0px 8px;
+    scale: 1.2;
+}
+.playbar i:hover{
+    scale: 1.4;
 }
 /* MIDDLE */
 .playbar-m-top{
@@ -205,11 +222,13 @@ main{
 }
 .sidebar-bottom{
     height: 70px;
-
 }
 .bottom-content a{
     color: var(--color-grey-text-2);
     text-decoration: none;
+}
+.bottom-content a:hover{
+    color: var(--color-light);
 }
 .bottom-content img{
     width: 10%;
@@ -229,6 +248,19 @@ main{
 .bg-profile img{
     width: 100%;
 }
+.navigation span:hover{
+    cursor: pointer;
+    color: var(--color-light);
+}
+.playlist span{
+    cursor: pointer;
+    color: var(--color-light);
+}
+.playlist li:hover{
+    cursor: pointer;
+    color: var(--color-light);
+}
+
 /* MAIN */
 #main-content{
     width: calc(100% - 200px);
