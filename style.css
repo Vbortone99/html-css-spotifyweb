@@ -361,4 +361,29 @@ section h2{
         width: calc(100%/3);
         padding: 5px 0px;
     }
+    .playbar .playbar-left,.playbar-middle,.playbar-right{
+        scale: 0.7;
+        transition: all 1s;
+    }
+}
+@media screen and (max-width:576){
+    .album{
+        flex-wrap: wrap;
+    }
+    .cover{
+       width: calc(100%/2);
+    }
+    .main-navbar ul{
+        flex-wrap: wrap;
+    justify-content: center;
+    }
+    .main-navbar ul li{
+        width: calc(100%/2);
+        padding: 5px 0px;
+    }
+    .playbar .playbar-left *,.playbar-m-top, *.playbar-right *{
+        scale: 0.7;
+        transition: all 1s;
+        width: calc(100%/2);
+    }
 }
