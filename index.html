@@ -173,7 +173,7 @@
             </section>
         </main>
         <div class="playbar flex-beetween-center">
-            <div class="playbar-left d-flex-al-center">
+            <div class="playbar-left d-flex-al-center flex-just-start">
                 <img src="img/player_left.jpg" alt="player placeholder">
                 <div class="player-title">
                     <h3 class="title">Placeholder</h3>
@@ -182,7 +182,7 @@
                 <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
                 <i class="fa-regular fa-folder" style="color: #ffffff;"></i>
             </div>
-            <div class="playbar-middle">
+            <div class="playbar-middle flex-just-center column-center">
                 <div class="playbar-m-top">
                     <i class="fa-solid fa-shuffle" style="color: #ffffff;"></i>
                     <i class="fa-solid fa-backward" style="color: #ffffff;"></i>
@@ -190,9 +190,13 @@
                     <i class="fa-solid fa-forward" style="color: #ffffff;"></i>
                     <i class="fa-solid fa-rotate-right" style="color: #ffffff;"></i>
                 </div>
-                <div class="playbar-m-bottom"></div>
+                <div class="playbar-m-bottom">
+                    <div class="d-flex-al-center">
+                        <input class="slider-middle" type="range" id="volume" name="volume" min="0" max="50" value="20" />
+                    </div>
+                </div>
             </div>
-            <div class="playbar-right d-flex">
+            <div class="playbar-right flex-just-end">
                 <div class="playbar-r-icons">
                     <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
                     <i class="fa-solid fa-display" style="color: #ffffff;"></i>
