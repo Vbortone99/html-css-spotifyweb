@@ -66,6 +66,11 @@ main{
     display: flex;
     flex-direction: column;
 }
+.flex-beetween-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 /* C-T-A */
 .upgrade-btn{
     text-decoration: none;
@@ -98,9 +103,13 @@ main{
 .sidebar-container{
     padding: 0px 15px;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 .sidebar-top{
-    min-height: 80%;
+    height: calc(100%-70px);
     gap: 20px;
 }
 .side-logo{
@@ -113,6 +122,9 @@ main{
 .side-icon{
     width: 15%;
 }
+.navigation{
+    padding: 5px 0px;
+}
 .add i{
     background-color:#a3a3a3;
     font-size: 2em;
@@ -124,7 +136,7 @@ main{
     padding:5px 0px;
 }
 .sidebar-bottom{
-    height: 20%;
+    height: 70px;
 
 }
 .bottom-content a{
