@@ -293,6 +293,10 @@ main{
     color:var(--color-grey-text-2);
     text-decoration: none;
 }
+.main-navbar ul li a:hover{
+    color: var(--color-light);
+    border-bottom: 2px solid #b8ea8b;
+}
 /* MAIN-SECTIONS */
 section h2{
     color: var(--color-light);
@@ -331,6 +335,7 @@ section h2{
     position: fixed;
     top: 0;
     left: 200px;
+    z-index: 1000;
 }
 /* MEDIA QUERY */
 @media screen and (max-width:992px){
