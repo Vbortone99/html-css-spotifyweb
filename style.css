@@ -56,6 +56,13 @@ main{
 .deco-none{
     text-decoration: none;
 }
+.big{
+    scale:2.0;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    display: none;
+}
 /* flex utility */
 .d-flex{
     display: flex;
@@ -295,6 +302,14 @@ section h2{
 .cover{
     width: calc(100%/6);
     margin: 0px 8px;
+    position: relative;
+}
+.cover-top:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.cover-top:hover .big{
+    display: block;
 }
 .cover-top img{
     width: 100%;
